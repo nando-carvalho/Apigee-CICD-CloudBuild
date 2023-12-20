@@ -23,5 +23,5 @@ steps:
         apigeecli token cache --metadata-token
   
         # openapi deployment
-        apigeecli apis create bundle  -f ./apiproxies/sample-hello-cicd/apiproxy  -n sample-hello-cicd
+        apigeecli apis create bundle -f sample-hello-cicd/apiproxy  -n sample-hello-cicd
         apigeecli apis deploy -n sample-hello-cicd -e default-dev -r

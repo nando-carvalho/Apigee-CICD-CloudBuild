@@ -1,1 +1,14 @@
-
+steps:
+  - id: 'Run apigeecli commands'
+    name: ghcr.io/apigee/apigeecli:latest
+    entrypoint: 'sh'
+    args:
+      - -c
+      - |
+        #setup preferences
+        apigeecli prefs set --nocheck=true -o interno-ipnet-dev
+        apigeecli token cache --metadata-token
+  
+        # openapi deployment
+        apigeecli apis create bundle  -f ./sample-hello-cicd/apiproxy  -n sample-hello-cicd
+        apigeecli apis deploy -n sample-hello-cicd -e default-dev -r

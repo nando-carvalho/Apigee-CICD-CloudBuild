@@ -1,0 +1,20 @@
+<APIProxy revision="2" name="multi-basepath">
+    <DisplayName>multiBasePath</DisplayName>
+    <Description></Description>
+    <CreatedAt>1683837704843</CreatedAt>
+    <LastModifiedAt>1683837921103</LastModifiedAt>
+    <BasePaths>/v1/dataTeam2</BasePaths>
+    <BasePaths>/v1/dataTeam1</BasePaths>
+    <BasePaths>/v1/data</BasePaths>
+    <Policies>
+        <Policy>Spike-Arrest-2</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+        <ProxyEndpoint>new1</ProxyEndpoint>
+        <ProxyEndpoint>new2</ProxyEndpoint>
+    </ProxyEndpoints>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

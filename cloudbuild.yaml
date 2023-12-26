@@ -23,5 +23,5 @@ steps:
         apigeecli token cache --metadata-token
   
         # openapi deployment
-        apigeecli apis create bundle -e default-dev -f ./multi-basepath_rev2_2023_12_26/apiproxy -n multi-basepath
-        apigeecli apis deploy -n multi-basepath -e default-dev -r
+        apigeecli apis create bundle -f ./multi-basepath_rev2_2023_12_26/apiproxy -n multi-basepath
+        apigeecli apis deploy -n multi-basepath -e default-dev -r -v 4

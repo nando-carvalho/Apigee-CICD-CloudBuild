@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<ProxyEndpoint name="new2">
+<ProxyEndpoint name="endpoint-3">
     <Description/>
     <FaultRules/>
-    <PreFlow name="PreFlow">
-        <Request/>
+    <PreFlow name="PreFlow">        
+        <Request>
+            <Step>
+                <Name>Spike-Arrest-2</Name>
+            </Step>
+        </Request>
         <Response/>
     </PreFlow>
     <PostFlow name="PostFlow">
